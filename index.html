@@ -128,18 +128,26 @@
     .cta-wrap { text-align: center; margin: 32px 0 8px; }
     .cta-btn {
       display: inline-block;
-      padding: 18px 48px;
+      padding: 20px 50px;
       font-family: 'Open Sans', Arial, sans-serif;
       font-size: 18px;
       font-weight: 700;
       color: #fff;
       text-decoration: none;
       border-radius: 50px;
-      background: linear-gradient(90deg, #E40303, #FF8C00, #FFED00, #008026, #004DFF, #750787);
+      background: #1a1a2e;
+      border: 3px solid transparent;
+      background-clip: padding-box;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       letter-spacing: 0.5px;
     }
-    .cta-btn:hover {
+    .cta-btn-wrap {
+      display: inline-block;
+      padding: 3px;
+      border-radius: 50px;
+      background: linear-gradient(90deg, #E40303, #FF8C00, #FFED00, #008026, #004DFF, #750787);
+    }
+    .cta-btn-wrap:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 20px rgba(200, 55, 171, 0.4);
     }
@@ -295,10 +303,7 @@
       object-fit: contain;
     }
     .partner-logos .logo-chamber {
-      height: 50px;
-      background: #1a1a2e;
-      padding: 8px 16px;
-      border-radius: 6px;
+      height: 60px;
     }
 
     /* ===== FOOTER ===== */
@@ -322,7 +327,7 @@
       .stat-number { font-size: 42px; }
       .partner-logos { gap: 24px; }
       .partner-logos img { height: 45px; }
-      .partner-logos .logo-chamber { height: 38px; padding: 6px 12px; }
+      .partner-logos .logo-chamber { height: 45px; }
       .step { gap: 14px; }
     }
   </style>
@@ -390,7 +395,7 @@
           </li>
         </ol>
         <div class="cta-wrap">
-          <a href="https://riceuniversity.co1.qualtrics.com/jfe/form/SV_57qDzxo7wiC6j3w" target="_blank" class="cta-btn">START THE SCREENER NOW &rarr;</a>
+          <span class="cta-btn-wrap"><a href="https://riceuniversity.co1.qualtrics.com/jfe/form/SV_57qDzxo7wiC6j3w" target="_blank" class="cta-btn">START THE SCREENER NOW &rarr;</a></span>
         </div>
         <p class="cta-note">Available in English and Spanish. All responses are de-identified and confidential.</p>
       </div>
@@ -507,7 +512,7 @@
           </li>
         </ol>
         <div class="cta-wrap">
-          <a href="https://riceuniversity.co1.qualtrics.com/jfe/form/SV_57qDzxo7wiC6j3w" target="_blank" class="cta-btn">&iexcl;COMIENZA EL CUESTIONARIO AHORA! &rarr;</a>
+          <span class="cta-btn-wrap"><a href="https://riceuniversity.co1.qualtrics.com/jfe/form/SV_57qDzxo7wiC6j3w" target="_blank" class="cta-btn">&iexcl;COMIENZA EL CUESTIONARIO AHORA! &rarr;</a></span>
         </div>
         <p class="cta-note">Disponible en ingl&eacute;s y espa&ntilde;ol. Todas las respuestas son an&oacute;nimas y confidenciales.</p>
       </div>
@@ -592,7 +597,7 @@
   <div class="rainbow-bar"></div>
   <footer class="footer">
     <p>Questions about the survey? Contact <a href="mailto:lgbtqsurvey@rice.edu">lgbtqsurvey@rice.edu</a></p>
-    <p>&copy; 2026 The Montrose Center &nbsp;|&nbsp; 401 Branard St, Houston, TX 77006</p>
+    <p>&copy; 2026 Houston Area L.O.V.E. Survey</p>
   </footer>
 
   <!-- ===== SCRIPTS ===== -->
