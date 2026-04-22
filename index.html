@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q93F5V0ZS1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Q93F5V0ZS1');
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Take the Houston Area L.O.V.E. Survey — the first LGBTQ+ Opinions, Voices and Experiences Survey for Greater Houston. Your 15 minutes helps shape how our region shows up for us.">
   <meta name="keywords" content="LGBTQ Houston, LOVE Survey, Houston LGBTQ survey, Montrose Center, Kinder Institute, Rice University, LGBTQ Chamber Houston, queer Houston">
@@ -623,6 +631,46 @@
       item.closest('.faq-list').querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
       if (!wasOpen) item.classList.add('open');
     }
+
+    // ===== GA4 EVENT TRACKING =====
+
+    // Track CTA clicks to the screener
+    document.querySelectorAll('a.cta-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var lang = document.getElementById('content-en').classList.contains('active') ? 'english' : 'spanish';
+        var section = btn.closest('.section--magenta') ? 'bottom_cta' : 'main_cta';
+        gtag('event', 'screener_click', {
+          event_category: 'conversion',
+          event_label: section + '_' + lang,
+          language: lang,
+          button_location: section
+        });
+      });
+    });
+
+    // Track language tab switches
+    document.querySelectorAll('.tab-btn').forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        var lang = tab.id === 'tab-es' ? 'spanish' : 'english';
+        gtag('event', 'language_switch', {
+          event_category: 'engagement',
+          event_label: lang,
+          language: lang
+        });
+      });
+    });
+
+    // Track FAQ opens
+    document.querySelectorAll('.faq-q').forEach(function(q) {
+      q.addEventListener('click', function() {
+        var lang = q.closest('#content-en') ? 'english' : 'spanish';
+        gtag('event', 'faq_open', {
+          event_category: 'engagement',
+          event_label: q.textContent.substring(0, 60),
+          language: lang
+        });
+      });
+    });
   </script>
 
 </body>
