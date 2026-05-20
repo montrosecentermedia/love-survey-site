@@ -186,6 +186,17 @@
     }
     .partnership-callout p { margin-bottom: 0; color: #444; font-size: 15px; line-height: 1.7; }
 
+    /* ===== WHY THIS SURVEY MATTERS ===== */
+    .why-heading {
+      font-size: 22px;
+      font-weight: 800;
+      color: #1a1a2e;
+      margin: 24px 0 12px;
+    }
+    .why-list { margin: 0 0 16px; padding-left: 22px; }
+    .why-list li { font-size: 16px; color: #444; margin-bottom: 8px; line-height: 1.6; }
+    .why-intro { color: #444; }
+
     /* ===== STEPS ===== */
     .steps { list-style: none; padding: 0; }
     .step {
@@ -297,22 +308,56 @@
     .faq-a p { font-size: 15px; color: #555; line-height: 1.7; margin-bottom: 0; }
 
     /* ===== PARTNER LOGOS ===== */
+    .partners-label {
+      text-align: center;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #999;
+      margin-bottom: 18px;
+    }
     .partner-logos {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 40px;
+      gap: 44px;
       flex-wrap: wrap;
-      padding: 20px 0;
+      padding: 4px 0 8px;
     }
     .partner-logos img {
-      height: 60px;
       width: auto;
       object-fit: contain;
     }
-    .partner-logos .logo-chamber {
-      height: 60px;
+    /* Per-logo heights tuned for equal visual weight */
+    .partner-logos .logo-chamber  { height: 78px; }
+    .partner-logos .logo-kinder   { height: 52px; }
+    .partner-logos .logo-montrose { height: 62px; }
+
+    /* ===== ADDITIONAL PARTNERS ===== */
+    .additional-partners {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 26px 40px;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 4px 0;
     }
+    .additional-partners img {
+      height: 46px;
+      width: auto;
+      max-width: 150px;
+      object-fit: contain;
+    }
+    .partner-invite {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin-top: 22px;
+      line-height: 1.6;
+    }
+    .partner-invite a { color: #C837AB; font-weight: 700; text-decoration: underline; }
 
     /* ===== FOOTER ===== */
     .footer {
@@ -333,9 +378,12 @@
       .section { padding: 36px 0; }
       .cta-btn { padding: 16px 32px; font-size: 16px; }
       .stat-number { font-size: 42px; }
-      .partner-logos { gap: 24px; }
-      .partner-logos img { height: 45px; }
-      .partner-logos .logo-chamber { height: 45px; }
+      .partner-logos { gap: 28px; }
+      .partner-logos .logo-chamber  { height: 58px; }
+      .partner-logos .logo-kinder   { height: 40px; }
+      .partner-logos .logo-montrose { height: 46px; }
+      .additional-partners { gap: 20px 28px; }
+      .additional-partners img { height: 36px; max-width: 120px; }
       .step { gap: 14px; }
     }
   </style>
@@ -364,13 +412,57 @@
     <section class="section section--white">
       <div class="container">
         <h1 class="headline">MAKE YOUR VOICE HEARD</h1>
-        <p class="subheadline">What does the LGBTQ+ community actually need? That depends on who you ask.</p>
+        <p class="subheadline">What does the LGBTQ+ community actually need?</p>
         <p>The <strong>Houston Area L.O.V.E. Survey</strong> &mdash; LGBTQ+ Opinions, Voices &amp; Experiences &mdash; is the FIRST community-wide survey of LGBTQ+ life in Greater Houston, covering healthcare, mental health, housing, workplace culture, financial security, discrimination, and more.</p>
-        <p>There is no comprehensive data on what LGBTQ+ Houstonians need. Without data, decisions get made without us. <strong>This survey changes that.</strong></p>
+
+        <h2 class="why-heading">Why This Survey Matters</h2>
+        <p class="why-intro">There is currently no comprehensive dataset on what LGBTQ+ residents of Greater Houston need, experience, or prioritize. As a result, the lived experiences and voices of LGBTQ+ people across our region are too often absent from the decisions that shape policy, funding, and community programming.</p>
+        <p class="why-intro">The L.O.V.E. Survey aims to change that by hearing from at least 5,000 LGBTQ+ residents across the region. Results will be used to:</p>
+        <ul class="why-list">
+          <li>Uplift voices and perspectives from across the LGBTQ+ community and the Greater Houston region</li>
+          <li>Connect findings to local leaders, community organizations, and members who can use this information to drive meaningful change</li>
+          <li>Establish a repeatable baseline that can be tracked over time to measure progress</li>
+          <li>Leverage other ongoing research by the Kinder Institute to deepen understanding of diverse communities in the Greater Houston area</li>
+        </ul>
+
         <p><strong>Your 15 minutes helps shape how our region shows up for us.</strong></p>
 
-        <div class="partnership-callout">
-          <p>This survey is a partnership between the <strong>Kinder Institute for Urban Research at Rice University</strong>, the <strong>Montrose Center</strong>, and the <strong>Greater Houston LGBTQ+ Chamber of Commerce</strong> &mdash; backed by more than two dozen LGBTQ+ organizations across the region working together to amplify this effort.</p>
+        <!-- CORE PARTNERS -->
+        <p class="partners-label" style="margin-top:32px;">A Partnership Between</p>
+        <div class="partner-logos">
+          <a href="https://www.houstonlgbtchamber.com" target="_blank"><img src="images/logo-chamber.png" alt="Greater Houston LGBTQ+ Chamber of Commerce" class="logo-chamber"></a>
+          <a href="https://kinder.rice.edu" target="_blank"><img src="images/logo-kinder.webp" alt="Kinder Institute for Urban Research at Rice University" class="logo-kinder"></a>
+          <a href="https://montrosecenter.org" target="_blank"><img src="images/logo-montrose.png" alt="The Montrose Center" class="logo-montrose"></a>
+        </div>
+
+        <!-- ADDITIONAL PARTNERS -->
+        <p class="partners-label" style="margin-top:28px;">Additional Partners Include</p>
+        <div class="additional-partners">
+          <img src="images/partners/alexander-jfs.jpg" alt="Alexander JFS">
+          <img src="images/partners/aih.png" alt="Allies in Hope">
+          <img src="images/partners/bunnies-on-the-bayou.png" alt="Bunnies on the Bayou">
+          <img src="images/partners/caucus.png" alt="The Caucus">
+          <img src="images/partners/diana-foundation.png" alt="The Diana Foundation">
+          <img src="images/partners/equality-texas.png" alt="Equality Texas">
+          <img src="images/partners/fcc.jpg" alt="First Congregational Church">
+          <img src="images/partners/grace-place.png" alt="Grace Place">
+          <img src="images/partners/jewish-federation.png" alt="Jewish Federation of Greater Houston">
+          <img src="images/partners/katy-pride.png" alt="Katy Pride">
+          <img src="images/partners/legacy-community-health.png" alt="Legacy Community Health">
+          <img src="images/partners/outsmart.png" alt="OutSmart Magazine">
+          <img src="images/partners/parents-of-trans-youth.jpg" alt="Parents of Trans Youth">
+          <img src="images/partners/pride-houston.png" alt="Pride Houston">
+          <img src="images/partners/rendezvous.jpg" alt="Rendezvous">
+          <img src="images/partners/texas-pride.png" alt="Texas Pride">
+          <img src="images/partners/tonys-place.png" alt="Tony's Place">
+          <img src="images/partners/translact.png" alt="TransLACT">
+          <img src="images/partners/united-way-greater-houston.png" alt="United Way of Greater Houston">
+        </div>
+
+        <p class="partner-invite">Interested in becoming a collaboration partner for the Survey? Please email <a href="mailto:dcato@montrosecenter.org">dcato@montrosecenter.org</a></p>
+
+        <div class="partnership-callout" style="margin-top:28px;">
+          <p>This survey is a partnership between the <strong>Greater Houston LGBTQ+ Chamber of Commerce</strong>, the <strong>Kinder Institute for Urban Research at Rice University</strong>, and the <strong>Montrose Center</strong> &mdash; backed by more than two dozen LGBTQ+ organizations across the region working together to amplify this effort.</p>
         </div>
       </div>
     </section>
@@ -481,13 +573,57 @@
     <section class="section section--white">
       <div class="container">
         <h1 class="headline">&iexcl;HAZ QUE TU VOZ SE ESCUCHE!</h1>
-        <p class="subheadline">&iquest;Qu&eacute; necesita realmente la comunidad LGBTQ+? Eso depende de a qui&eacute;n le preguntes.</p>
+        <p class="subheadline">&iquest;Qu&eacute; necesita realmente la comunidad LGBTQ+?</p>
         <p>La <strong>Encuesta L.O.V.E. del &Aacute;rea de Houston</strong> &mdash; Opiniones, Voces y Experiencias LGBTQ+ &mdash; es la PRIMERA encuesta comunitaria sobre la vida LGBTQ+ en el &aacute;rea metropolitana de Houston. Cubre temas como acceso a la salud, salud mental, vivienda, cultura laboral, seguridad financiera, discriminaci&oacute;n y m&aacute;s.</p>
-        <p>No existen datos completos sobre lo que las personas LGBTQ+ de Houston necesitan. Sin datos, las decisiones se toman sin nosotros. <strong>Esta encuesta cambia eso.</strong></p>
+
+        <h2 class="why-heading">Por Qu&eacute; Importa Esta Encuesta</h2>
+        <p class="why-intro">Actualmente no existe un conjunto de datos integral sobre lo que las personas LGBTQ+ del &aacute;rea metropolitana de Houston necesitan, viven o priorizan. Como resultado, las experiencias y voces de las personas LGBTQ+ de nuestra regi&oacute;n con demasiada frecuencia est&aacute;n ausentes de las decisiones que definen las pol&iacute;ticas, el financiamiento y los programas comunitarios.</p>
+        <p class="why-intro">La <strong>Encuesta L.O.V.E.</strong> busca cambiar esto escuchando a al menos 5,000 residentes LGBTQ+ de toda la regi&oacute;n. Los resultados se utilizar&aacute;n para:</p>
+        <ul class="why-list">
+          <li>Amplificar las voces y perspectivas de toda la comunidad LGBTQ+ y del &aacute;rea metropolitana de Houston</li>
+          <li>Conectar los hallazgos con l&iacute;deres locales, organizaciones comunitarias y miembros que puedan usar esta informaci&oacute;n para impulsar un cambio significativo</li>
+          <li>Establecer una l&iacute;nea base repetible que pueda monitorearse a lo largo del tiempo para medir el progreso</li>
+          <li>Aprovechar otras investigaciones en curso del Kinder Institute para profundizar la comprensi&oacute;n de las diversas comunidades del &aacute;rea metropolitana de Houston</li>
+        </ul>
+
         <p><strong>Tus 15 minutos ayudan a influir en c&oacute;mo nuestra regi&oacute;n se presentar&aacute; para nosotros.</strong></p>
 
-        <div class="partnership-callout">
-          <p>Esta encuesta es una colaboraci&oacute;n entre el <strong>Kinder Institute for Urban Research de Rice University</strong>, el <strong>Montrose Center</strong> y la <strong>Greater Houston LGBTQ+ Chamber of Commerce</strong> &mdash; respaldada por m&aacute;s de dos docenas de organizaciones LGBTQ+ en toda la regi&oacute;n trabajando juntas para amplificar este esfuerzo.</p>
+        <!-- CORE PARTNERS -->
+        <p class="partners-label" style="margin-top:32px;">Una Colaboraci&oacute;n Entre</p>
+        <div class="partner-logos">
+          <a href="https://www.houstonlgbtchamber.com" target="_blank"><img src="images/logo-chamber.png" alt="Greater Houston LGBTQ+ Chamber of Commerce" class="logo-chamber"></a>
+          <a href="https://kinder.rice.edu" target="_blank"><img src="images/logo-kinder.webp" alt="Kinder Institute for Urban Research at Rice University" class="logo-kinder"></a>
+          <a href="https://montrosecenter.org" target="_blank"><img src="images/logo-montrose.png" alt="The Montrose Center" class="logo-montrose"></a>
+        </div>
+
+        <!-- ADDITIONAL PARTNERS -->
+        <p class="partners-label" style="margin-top:28px;">Otros Socios Incluyen</p>
+        <div class="additional-partners">
+          <img src="images/partners/alexander-jfs.jpg" alt="Alexander JFS">
+          <img src="images/partners/aih.png" alt="Allies in Hope">
+          <img src="images/partners/bunnies-on-the-bayou.png" alt="Bunnies on the Bayou">
+          <img src="images/partners/caucus.png" alt="The Caucus">
+          <img src="images/partners/diana-foundation.png" alt="The Diana Foundation">
+          <img src="images/partners/equality-texas.png" alt="Equality Texas">
+          <img src="images/partners/fcc.jpg" alt="First Congregational Church">
+          <img src="images/partners/grace-place.png" alt="Grace Place">
+          <img src="images/partners/jewish-federation.png" alt="Jewish Federation of Greater Houston">
+          <img src="images/partners/katy-pride.png" alt="Katy Pride">
+          <img src="images/partners/legacy-community-health.png" alt="Legacy Community Health">
+          <img src="images/partners/outsmart.png" alt="OutSmart Magazine">
+          <img src="images/partners/parents-of-trans-youth.jpg" alt="Parents of Trans Youth">
+          <img src="images/partners/pride-houston.png" alt="Pride Houston">
+          <img src="images/partners/rendezvous.jpg" alt="Rendezvous">
+          <img src="images/partners/texas-pride.png" alt="Texas Pride">
+          <img src="images/partners/tonys-place.png" alt="Tony's Place">
+          <img src="images/partners/translact.png" alt="TransLACT">
+          <img src="images/partners/united-way-greater-houston.png" alt="United Way of Greater Houston">
+        </div>
+
+        <p class="partner-invite">&iquest;Te interesa convertirte en socio colaborador de la Encuesta? Escribe a <a href="mailto:dcato@montrosecenter.org">dcato@montrosecenter.org</a></p>
+
+        <div class="partnership-callout" style="margin-top:28px;">
+          <p>Esta encuesta es una colaboraci&oacute;n entre la <strong>Greater Houston LGBTQ+ Chamber of Commerce</strong>, el <strong>Kinder Institute for Urban Research de Rice University</strong> y el <strong>Montrose Center</strong> &mdash; respaldada por m&aacute;s de dos docenas de organizaciones LGBTQ+ en toda la regi&oacute;n trabajando juntas para amplificar este esfuerzo.</p>
         </div>
       </div>
     </section>
@@ -588,18 +724,6 @@
 
   </div>
   <!-- END SPANISH -->
-
-  <!-- ===== PARTNER LOGOS ===== -->
-  <section class="section section--white" style="padding: 36px 0;">
-    <div class="container">
-      <p style="text-align: center; font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: #999; margin-bottom: 20px;">A Partnership Between</p>
-      <div class="partner-logos">
-        <a href="https://www.houstonlgbtchamber.com" target="_blank"><img src="images/logo-chamber.png" alt="Greater Houston LGBTQ+ Chamber of Commerce" class="logo-chamber"></a>
-        <a href="https://kinder.rice.edu" target="_blank"><img src="images/logo-kinder.png" alt="Kinder Institute for Urban Research at Rice University"></a>
-        <a href="https://montrosecenter.org" target="_blank"><img src="images/logo-montrose.png" alt="The Montrose Center"></a>
-      </div>
-    </div>
-  </section>
 
   <!-- ===== FOOTER ===== -->
   <div class="rainbow-bar"></div>
