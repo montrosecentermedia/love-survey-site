@@ -363,6 +363,11 @@
     .partner-logos .logo-chamber  { height: 78px; }
     .partner-logos .logo-kinder   { height: 52px; }
     .partner-logos .logo-montrose { height: 62px; }
+    /* Top partner logos: 25% larger */
+    .partner-logos--top { gap: 54px; }
+    .partner-logos--top .logo-chamber  { height: 98px; }
+    .partner-logos--top .logo-kinder   { height: 65px; }
+    .partner-logos--top .logo-montrose { height: 78px; }
 
     /* ===== ADDITIONAL PARTNERS ===== */
     .additional-partners {
@@ -419,6 +424,10 @@
       .partner-logos .logo-chamber  { height: 58px; }
       .partner-logos .logo-kinder   { height: 40px; }
       .partner-logos .logo-montrose { height: 46px; }
+      .partner-logos--top { gap: 30px; }
+      .partner-logos--top .logo-chamber  { height: 72px; }
+      .partner-logos--top .logo-kinder   { height: 50px; }
+      .partner-logos--top .logo-montrose { height: 58px; }
       .additional-partners { gap: 20px 28px; }
       .additional-partners img { height: 36px; max-width: 120px; }
     }
@@ -428,16 +437,18 @@
 
   <!-- ===== HERO BANNER ===== -->
   <div class="hero">
+    <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=eIwipPqW1UyeTU5rEsWXL_2AX7sar7dCo_p_54qcbJJUQVMxMDhES1ZUQUtKTlhHQUE3UDU0Tzc4OS4u" target="_blank" aria-label="RSVP for the Houston Area L.O.V.E. Survey Public Report Release">
     <img src="images/hero-release-desktop.png" alt="You're invited: Houston Area L.O.V.E. Survey Public Report Release. Thursday, October 29 at 6:00 PM at the Montrose Center, 401 Branard St, Houston. Doors open at 5:30 PM. All are welcome." class="hero-desktop" width="2400" height="1000">
     <img src="images/hero-release-mobile.png" alt="You're invited: Houston Area L.O.V.E. Survey Public Report Release. Thursday, October 29 at 6:00 PM at the Montrose Center, 401 Branard St, Houston. Doors open at 5:30 PM. All are welcome." class="hero-mobile" width="1200" height="1480">
+    </a>
   </div>
   <div class="rainbow-bar"></div>
 
   <!-- ===== CORE PARTNERS (top) ===== -->
   <section class="section--white" style="padding: 22px 0 16px;">
-    <div class="container">
+    <div class="container" style="max-width: 1040px;">
       <p class="partners-label" style="margin-bottom:14px;">A Partnership Between</p>
-      <div class="partner-logos">
+      <div class="partner-logos partner-logos--top">
         <a href="https://www.houstonlgbtchamber.com" target="_blank"><img src="images/logo-chamber.png" alt="Greater Houston LGBTQ+ Chamber of Commerce" class="logo-chamber"></a>
         <a href="https://kinder.rice.edu" target="_blank"><img src="images/logo-kinder.webp" alt="Kinder Institute for Urban Research at Rice University" class="logo-kinder"></a>
         <a href="https://montrosecenter.org" target="_blank"><img src="images/logo-montrose.png" alt="The Montrose Center" class="logo-montrose"></a>
@@ -642,8 +653,6 @@
           <img src="images/partners/translact.png" alt="TransLACT">
           <img src="images/partners/united-way-greater-houston.png?v=2" alt="United Way of Greater Houston">
         </div>
-
-        <p class="partner-invite">Interested in becoming a collaboration partner for the Survey? Please email <a href="mailto:dcato@montrosecenter.org">dcato@montrosecenter.org</a></p>
       </div>
     </section>
 
@@ -841,8 +850,6 @@
           <img src="images/partners/translact.png" alt="TransLACT">
           <img src="images/partners/united-way-greater-houston.png?v=2" alt="United Way of Greater Houston">
         </div>
-
-        <p class="partner-invite">&iquest;Te interesa convertirte en socio colaborador de la Encuesta? Escribe a <a href="mailto:dcato@montrosecenter.org">dcato@montrosecenter.org</a></p>
       </div>
     </section>
 
@@ -887,7 +894,7 @@
     document.querySelectorAll('a[href*="forms.cloud.microsoft"]').forEach(function(btn) {
       btn.addEventListener('click', function() {
         var lang = document.getElementById('content-en').classList.contains('active') ? 'english' : 'spanish';
-        var section = btn.closest('.section--magenta') ? 'bottom_cta' : (btn.closest('.faq-a') ? 'faq_link' : 'main_cta');
+        var section = btn.closest('.hero') ? 'hero_image' : btn.closest('.section--magenta') ? 'bottom_cta' : (btn.closest('.faq-a') ? 'faq_link' : 'main_cta');
         gtag('event', 'rsvp_click', {
           event_category: 'conversion',
           event_label: section + '_' + lang,
