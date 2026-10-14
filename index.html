@@ -11,14 +11,15 @@
     gtag('config', 'G-Q93F5V0ZS1');
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Take the Houston Area L.O.V.E. Survey — the first LGBTQ+ Opinions, Voices and Experiences Survey for Greater Houston. Your 15 minutes helps shape how our region shows up for us.">
-  <meta name="keywords" content="LGBTQ Houston, LOVE Survey, Houston LGBTQ survey, Montrose Center, Kinder Institute, Rice University, LGBTQ Chamber Houston, queer Houston">
-  <meta property="og:title" content="Houston Area L.O.V.E. Survey — Make Your Voice Heard">
-  <meta property="og:description" content="The FIRST community-wide survey of LGBTQ+ life in Greater Houston. 15 minutes. Confidential. De-identified. Take the screener now.">
-  <meta property="og:image" content="images/hero-desktop.png?v=2">
+  <meta name="description" content="You're invited to the public release of the Houston Area L.O.V.E. Survey report — the first community-wide survey of LGBTQ+ life in Greater Houston. Thursday, October 29, 6 PM at the Montrose Center. All are welcome.">
+  <meta name="keywords" content="LGBTQ Houston, LOVE Survey, Houston LGBTQ survey, LGBTQ+ History Month, report release, Montrose Center, Kinder Institute, Rice University, LGBTQ Chamber Houston, queer Houston">
+  <meta property="og:title" content="You're Invited: Houston Area L.O.V.E. Survey Public Report Release">
+  <meta property="og:description" content="Join us Thursday, October 29 at 6 PM at the Montrose Center as we share what LGBTQ+ Houstonians told us about their lives, needs, and well-being. All are welcome.">
+  <meta property="og:image" content="https://houstonarealovesurvey.org/images/hero-release-desktop.png">
+  <meta property="og:url" content="https://houstonarealovesurvey.org/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <title>Houston Area L.O.V.E. Survey | LGBTQ+ Opinions, Voices &amp; Experiences</title>
+  <title>Houston Area L.O.V.E. Survey | Public Report Release &middot; October 29</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -40,6 +41,7 @@
       position: relative;
       width: 100%;
       overflow: hidden;
+      background: #b10891;
     }
     .hero-desktop { display: block; width: 100%; }
     .hero-mobile { display: none; width: 100%; }
@@ -106,6 +108,15 @@
     .section--dark { background: #1a1a2e; color: #fff; }
 
     /* ===== TYPOGRAPHY ===== */
+    .eyebrow {
+      text-align: center;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #C837AB;
+      margin-bottom: 6px;
+    }
     .headline {
       font-size: 34px;
       font-weight: 800;
@@ -119,7 +130,7 @@
       font-size: 18px;
       color: #555;
       text-align: center;
-      margin-bottom: 32px;
+      margin-bottom: 28px;
     }
     .subheadline--white { color: rgba(255,255,255,0.85); }
     h2.section-title {
@@ -131,6 +142,47 @@
     }
     h2.section-title--white { color: #fff; }
     p { margin-bottom: 16px; }
+    .lede {
+      font-size: 18px;
+      color: #333;
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 28px;
+    }
+
+    /* ===== EVENT DETAILS ===== */
+    .event-card {
+      border: 2px solid #eee;
+      border-radius: 12px;
+      background: #fff;
+      overflow: hidden;
+      max-width: 620px;
+      margin: 0 auto;
+    }
+    .event-card .rainbow-bar { height: 5px; }
+    .event-rows { padding: 8px 28px; }
+    .event-row {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      padding: 18px 0;
+      border-bottom: 1px solid #f0eaf5;
+    }
+    .event-row:last-child { border-bottom: none; }
+    .event-label {
+      flex-shrink: 0;
+      width: 70px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #C837AB;
+      padding-top: 3px;
+    }
+    .event-value { font-size: 16px; color: #1a1a2e; line-height: 1.55; }
+    .event-value strong { font-weight: 700; }
+    .event-value .muted { color: #555; font-size: 15px; }
+    .event-value a.map-link { color: #C837AB; font-weight: 600; font-size: 14px; }
 
     /* ===== CTA BUTTON ===== */
     .cta-wrap { text-align: center; margin: 32px 0 8px; }
@@ -174,19 +226,9 @@
       text-align: center;
       margin-top: 12px;
     }
-    .cta-note--white { color: rgba(255,255,255,0.7); }
+    .cta-note--white { color: rgba(255,255,255,0.8); }
 
-    /* ===== PARTNERSHIP CALLOUT ===== */
-    .partnership-callout {
-      border-left: 5px solid #C837AB;
-      background: #f9f5ff;
-      padding: 20px 24px;
-      border-radius: 0 8px 8px 0;
-      margin: 24px 0;
-    }
-    .partnership-callout p { margin-bottom: 0; color: #444; font-size: 15px; line-height: 1.7; }
-
-    /* ===== WHY THIS SURVEY MATTERS ===== */
+    /* ===== WHY THIS MATTERS ===== */
     .why-heading {
       font-size: 22px;
       font-weight: 800;
@@ -197,76 +239,64 @@
     .why-list li { font-size: 16px; color: #444; margin-bottom: 8px; line-height: 1.6; }
     .why-intro { color: #444; }
 
-    /* ===== STEPS ===== */
-    .steps { list-style: none; padding: 0; }
-    .step {
-      display: flex;
-      gap: 20px;
-      align-items: flex-start;
-      margin-bottom: 24px;
+    /* ===== HISTORY MONTH CALLOUT ===== */
+    .partnership-callout {
+      border-left: 5px solid #C837AB;
+      background: #f9f5ff;
+      padding: 20px 24px;
+      border-radius: 0 8px 8px 0;
+      margin: 24px 0;
     }
-    .step-number {
-      flex-shrink: 0;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 22px;
-      font-weight: 800;
-      color: #fff;
-    }
-    .step-number--1 { background: linear-gradient(135deg, #E40303, #FF8C00, #FFED00); }
-    .step-number--2 { background: linear-gradient(135deg, #008026, #004DFF); }
-    .step-number--3 { background: linear-gradient(135deg, #004DFF, #750787); }
-    .step-title { font-size: 17px; font-weight: 700; color: #1a1a2e; margin-bottom: 4px; }
-    .step-desc { font-size: 15px; color: #555; line-height: 1.6; }
+    .partnership-callout p { margin-bottom: 0; color: #444; font-size: 16px; line-height: 1.7; }
 
-    /* ===== STAT CALLOUT ===== */
-    .stat-card {
-      text-align: center;
+    /* ===== SPEAKERS ===== */
+    .speaker-intro { text-align: center; color: #555; max-width: 620px; margin: -12px auto 28px; }
+    .speaker-list { display: flex; flex-direction: column; gap: 18px; }
+    .speaker {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      background: #fff;
       border: 2px solid #eee;
       border-radius: 12px;
-      padding: 32px 24px;
-      margin: 32px 0;
-      background: #fff;
+      padding: 24px;
     }
-    .stat-number {
-      font-size: 52px;
-      font-weight: 800;
-      color: #C837AB;
-      line-height: 1;
-      margin-bottom: 4px;
+    .speaker-photo {
+      flex-shrink: 0;
+      width: 116px;
+      height: 116px;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(135deg, #E40303, #FF8C00, #FFED00, #008026, #004DFF, #750787);
     }
-    .stat-label {
-      font-size: 14px;
-      color: #555;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      margin-bottom: 8px;
+    .speaker-photo img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
     }
-    .stat-desc {
-      font-size: 15px;
-      color: #444;
-      max-width: 400px;
-      margin: 0 auto;
-    }
+    .speaker-name { font-size: 20px; font-weight: 800; color: #1a1a2e; line-height: 1.25; }
+    .speaker-name .pronouns { font-size: 14px; font-weight: 600; color: #888; }
+    .speaker-role { font-size: 13px; font-weight: 700; letter-spacing: 0.5px; color: #C837AB; margin-top: 4px; line-height: 1.45; }
+    .speaker-org { font-size: 14px; color: #666; margin-top: 2px; line-height: 1.45; }
+    .speaker-bio { font-size: 15px; color: #444; line-height: 1.65; margin: 10px 0 0; }
 
-    /* ===== ELIGIBILITY ===== */
+    /* ===== ALL ARE WELCOME ===== */
     .eligibility-box {
-      background: #f9f5ff;
+      background: #fff;
+      border: 2px solid #eee;
       border-radius: 12px;
       padding: 28px 24px;
       text-align: center;
     }
     .eligibility-box h3 {
-      font-size: 20px;
-      font-weight: 700;
+      font-size: 22px;
+      font-weight: 800;
       color: #1a1a2e;
       margin-bottom: 12px;
     }
-    .eligibility-box p { color: #444; font-size: 15px; margin-bottom: 0; }
+    .eligibility-box p { color: #444; font-size: 16px; margin-bottom: 0; }
 
     /* ===== FAQ ===== */
     .faq-list { max-width: 700px; margin: 0 auto; }
@@ -306,6 +336,7 @@
       padding-top: 12px;
     }
     .faq-a p { font-size: 15px; color: #555; line-height: 1.7; margin-bottom: 0; }
+    .faq-a a { color: #C837AB; font-weight: 600; }
 
     /* ===== PARTNER LOGOS ===== */
     .partners-label {
@@ -368,23 +399,28 @@
       font-size: 13px;
       line-height: 1.8;
     }
+    .footer p { margin-bottom: 4px; }
     .footer a { color: rgba(255,255,255,0.7); text-decoration: underline; }
     .footer a:hover { color: #fff; }
 
     /* ===== MOBILE ===== */
     @media (max-width: 600px) {
-      .headline { font-size: 26px; }
+      .headline { font-size: 28px; }
+      .lede { font-size: 16px; }
       h2.section-title { font-size: 21px; }
       .section { padding: 36px 0; }
       .cta-btn { padding: 16px 32px; font-size: 16px; }
-      .stat-number { font-size: 42px; }
+      .event-rows { padding: 4px 18px; }
+      .event-row { flex-direction: column; gap: 4px; padding: 14px 0; }
+      .event-label { width: auto; padding-top: 0; }
+      .speaker { flex-direction: column; align-items: center; text-align: center; padding: 22px 18px; gap: 14px; }
+      .speaker-photo { width: 104px; height: 104px; }
       .partner-logos { gap: 28px; }
       .partner-logos .logo-chamber  { height: 58px; }
       .partner-logos .logo-kinder   { height: 40px; }
       .partner-logos .logo-montrose { height: 46px; }
       .additional-partners { gap: 20px 28px; }
       .additional-partners img { height: 36px; max-width: 120px; }
-      .step { gap: 14px; }
     }
   </style>
 </head>
@@ -392,8 +428,8 @@
 
   <!-- ===== HERO BANNER ===== -->
   <div class="hero">
-    <img src="images/hero-desktop.png?v=2" alt="Houston Area L.O.V.E. Survey — LGBTQ+ Opinions, Voices and Experiences" class="hero-desktop">
-    <img src="images/hero-mobile.png?v=2" alt="Houston Area L.O.V.E. Survey — LGBTQ+ Opinions, Voices and Experiences" class="hero-mobile">
+    <img src="images/hero-release-desktop.png" alt="You're invited: Houston Area L.O.V.E. Survey Public Report Release. Thursday, October 29 at 6:00 PM at the Montrose Center, 401 Branard St, Houston. Doors open at 5:30 PM. All are welcome." class="hero-desktop" width="2400" height="1000">
+    <img src="images/hero-release-mobile.png" alt="You're invited: Houston Area L.O.V.E. Survey Public Report Release. Thursday, October 29 at 6:00 PM at the Montrose Center, 401 Branard St, Houston. Doors open at 5:30 PM. All are welcome." class="hero-mobile" width="1200" height="1480">
   </div>
   <div class="rainbow-bar"></div>
 
@@ -420,20 +456,92 @@
   <!-- ============================================================ -->
   <div class="tab-content active" id="content-en" role="tabpanel" aria-labelledby="tab-en">
 
-    <!-- INTRO -->
+    <!-- INVITATION -->
     <section class="section section--white">
       <div class="container">
-        <h1 class="headline">MAKE YOUR VOICE HEARD</h1>
-        <p class="subheadline">What does the LGBTQ+ community actually need?</p>
-        <p>The <strong>Houston Area L.O.V.E. Survey</strong> &mdash; LGBTQ+ Opinions, Voices &amp; Experiences &mdash; is the FIRST community-wide survey of LGBTQ+ life in Greater Houston, covering healthcare, mental health, housing, workplace culture, financial security, discrimination, and more.</p>
+        <p class="eyebrow">Public Report Release</p>
+        <h1 class="headline">YOU&rsquo;RE INVITED</h1>
+        <p class="lede">Join us as we share what LGBTQ+ Houstonians told us about their lives, needs, and well-being, and what it means for our region. <strong>All are welcome.</strong></p>
 
-        <div class="cta-wrap">
-          <span class="cta-btn-wrap"><a href="https://riceuniversity.co1.qualtrics.com/jfe/form/SV_57qDzxo7wiC6j3w" target="_blank" class="cta-btn">TAKE THE SURVEY NOW &rarr;</a></span>
+        <div class="event-card">
+          <div class="rainbow-bar"></div>
+          <div class="event-rows">
+            <div class="event-row">
+              <div class="event-label">When</div>
+              <div class="event-value"><strong>Thursday, October 29, 2026</strong><br><span class="muted">5:30 PM Doors Open &middot; 6:00 PM Program &middot; 7:00 PM Program Ends</span></div>
+            </div>
+            <div class="event-row">
+              <div class="event-label">Where</div>
+              <div class="event-value"><strong>The Montrose Center</strong><br><span class="muted">401 Branard St, 1st Floor, Houston, TX 77006</span><br><a class="map-link" href="https://maps.google.com/?q=401+Branard+St,+Houston,+TX+77006" target="_blank">Get directions &rarr;</a></div>
+            </div>
+          </div>
         </div>
 
-        <h2 class="why-heading">Why This Survey Matters</h2>
-        <p class="why-intro">There is currently no comprehensive dataset on what LGBTQ+ residents of Greater Houston need, experience, or prioritize. As a result, the lived experiences and voices of LGBTQ+ people across our region are too often absent from the decisions that shape policy, funding, and community programming.</p>
-        <p class="why-intro">The L.O.V.E. Survey aims to change that by hearing from at least 5,000 LGBTQ+ residents across the region. Results will be used to:</p>
+        <div class="cta-wrap">
+          <span class="cta-btn-wrap"><a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=eIwipPqW1UyeTU5rEsWXL_2AX7sar7dCo_p_54qcbJJUQVMxMDhES1ZUQUtKTlhHQUE3UDU0Tzc4OS4u" target="_blank" class="cta-btn">RSVP NOW &rarr;</a></span>
+        </div>
+        <p class="cta-note">Open to the public. Please RSVP so we can plan accordingly.</p>
+      </div>
+    </section>
+
+    <!-- SPEAKERS -->
+    <section class="section section--light">
+      <div class="container">
+        <h2 class="section-title">Featured Speakers</h2>
+        <p class="speaker-intro">Hear directly from the leaders and researchers behind the Houston Area L.O.V.E. Survey.</p>
+        <div class="speaker-list">
+          <div class="speaker">
+            <div class="speaker-photo"><img src="images/speakers/tammi-wallace.jpg" alt="Tammi Wallace" width="600" height="600"></div>
+            <div>
+              <div class="speaker-name">Tammi Wallace <span class="pronouns">(she/her)</span></div>
+              <div class="speaker-role">Co-Founder, President &amp; CEO</div>
+              <div class="speaker-org">Greater Houston LGBTQ+ Chamber of Commerce</div>
+              <p class="speaker-bio">Tammi leads efforts to advance economic inclusion and opportunity for LGBTQ+ businesses and the broader community. Since co-founding the Chamber in 2016, she has helped build a community ecosystem connecting entrepreneurs, corporate leaders, nonprofits and elected officials. Her experience includes roles as Chief Growth Officer for KIPP Houston and Chief of Staff for State Representative Ellen Cohen, and for more than two decades she has worked on behalf of the LGBTQ+ community to advance equality.</p>
+            </div>
+          </div>
+          <div class="speaker">
+            <div class="speaker-photo"><img src="images/speakers/daniel-potter.jpg" alt="Daniel Potter" width="600" height="600"></div>
+            <div>
+              <div class="speaker-name">Daniel Potter <span class="pronouns">(he/him)</span></div>
+              <div class="speaker-role">Director</div>
+              <div class="speaker-org">Houston Population Research Center, Kinder Institute for Urban Research at Rice University</div>
+              <p class="speaker-bio">Daniel directs the survey work for the Houston Population Research Center, overseeing the Greater Houston Community Panel, the Kinder Houston Area Survey, the Asian American Community Study, and the Houston L.O.V.E. Survey. He and his team take surveys from start to finish in service to better understanding the values, attitudes, and experiences of life in the Houston region.</p>
+            </div>
+          </div>
+          <div class="speaker">
+            <div class="speaker-photo"><img src="images/speakers/kishan-bhakta.jpg" alt="Kishan Bhakta" width="600" height="600"></div>
+            <div>
+              <div class="speaker-name">Kishan Bhakta <span class="pronouns">(he/him)</span></div>
+              <div class="speaker-role">Research Analyst</div>
+              <div class="speaker-org">Houston Population Research Center, Kinder Institute for Urban Research at Rice University</div>
+              <p class="speaker-bio">Kishan&rsquo;s work focuses on survey research, including developing and programming surveys, analyzing data, and using findings to better understand the attitudes, experiences, and perspectives of people across the Houston area.</p>
+            </div>
+          </div>
+          <div class="speaker">
+            <div class="speaker-photo"><img src="images/speakers/avery-belyeu.jpg" alt="Avery Belyeu" width="600" height="600"></div>
+            <div>
+              <div class="speaker-name">Avery Belyeu <span class="pronouns">(she/her)</span></div>
+              <div class="speaker-role">Chief Executive Officer</div>
+              <div class="speaker-org">The Montrose Center</div>
+              <p class="speaker-bio">A seasoned nonprofit leader with a focus on LGBTQ+ health and wellness, Avery&rsquo;s career spans suicide prevention and crisis intervention, public health, civil rights, and higher education. She has held leadership roles at Lambda Legal, the Suicide Prevention Resource Center, and The Trevor Project, where she created the organization&rsquo;s education department. In 2024, she was named to Out Magazine&rsquo;s OUT100 list.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORIC -->
+    <section class="section section--white">
+      <div class="container">
+        <h2 class="section-title">A Historic First for Greater Houston</h2>
+        <p>The <strong>Houston Area L.O.V.E. Survey</strong> &mdash; LGBTQ+ Opinions, Voices &amp; Experiences &mdash; is the FIRST community-wide survey of LGBTQ+ life in Greater Houston, covering healthcare, mental health, housing, workplace culture, financial security, discrimination, and more.</p>
+        <p class="why-intro">Until now, there has been no comprehensive dataset on what LGBTQ+ residents of Greater Houston need, experience, or prioritize. As a result, the lived experiences and voices of LGBTQ+ people across our region have too often been absent from the decisions that shape policy, funding, and community programming.</p>
+
+        <div class="partnership-callout">
+          <p>The report is being released during <strong>LGBTQ+ History Month</strong> &mdash; a fitting moment to put the voices of LGBTQ+ Houstonians on the record and add a new chapter to our community&rsquo;s story.</p>
+        </div>
+
+        <h3 class="why-heading">What the Findings Will Help Us Do</h3>
         <ul class="why-list">
           <li>Uplift voices and perspectives from across the LGBTQ+ community and the Greater Houston region</li>
           <li>Connect findings to local leaders, community organizations, and members who can use this information to drive meaningful change</li>
@@ -441,87 +549,48 @@
           <li>Leverage other ongoing research by the Kinder Institute to deepen understanding of diverse communities in the Greater Houston area</li>
         </ul>
 
-        <p><strong>Your 15 minutes helps shape how our region shows up for us.</strong></p>
+        <p><strong>Thank you to every LGBTQ+ Houstonian who shared their voice. On October 29, we&rsquo;ll share what you told us.</strong></p>
       </div>
     </section>
 
-    <!-- HOW IT WORKS -->
+    <!-- ALL ARE WELCOME -->
     <section class="section section--light">
       <div class="container">
-        <h2 class="section-title">Here&rsquo;s How It Works</h2>
-        <ol class="steps">
-          <li class="step">
-            <div class="step-number step-number--1">1</div>
-            <div>
-              <div class="step-title">Complete the Screener</div>
-              <div class="step-desc">A quick 2&ndash;3 minute form to confirm you&rsquo;re eligible (18+, living in Greater Houston, LGBTQ+ identified).</div>
-            </div>
-          </li>
-          <li class="step">
-            <div class="step-number step-number--2">2</div>
-            <div>
-              <div class="step-title">Receive Your Survey Link</div>
-              <div class="step-desc">If eligible, you&rsquo;ll receive a secure link via email or text to complete the full survey.</div>
-            </div>
-          </li>
-          <li class="step">
-            <div class="step-number step-number--3">3</div>
-            <div>
-              <div class="step-title">Share Your Experience</div>
-              <div class="step-desc">Take 15&ndash;20 minutes to answer questions about your life, needs, and experiences in Greater Houston. Skip any question you prefer not to answer.</div>
-            </div>
-          </li>
-        </ol>
-        <div class="cta-wrap">
-          <span class="cta-btn-wrap"><a href="https://riceuniversity.co1.qualtrics.com/jfe/form/SV_57qDzxo7wiC6j3w" target="_blank" class="cta-btn">START THE SCREENER NOW &rarr;</a></span>
-        </div>
-        <p class="cta-note">Available in English and Spanish. All responses are de-identified and confidential.</p>
-      </div>
-    </section>
-
-    <!-- STAT + ELIGIBILITY -->
-    <section class="section section--white">
-      <div class="container">
-        <div class="stat-card">
-          <div class="stat-number">5,000+</div>
-          <div class="stat-label">Voices Needed from Greater Houston</div>
-          <p class="stat-desc">Results will be shared with local leaders and community organizations to drive real change. Be one of them.</p>
-        </div>
         <div class="eligibility-box">
-          <h3>Who Can Participate?</h3>
-          <p>Adults (18+) who live in the Greater Houston area &mdash; including Harris, Fort Bend, Montgomery, Galveston, Brazoria, Chambers, Liberty, and Waller counties &mdash; and who self-identify as a member of the LGBTQ+ community.</p>
+          <h3>All Are Welcome</h3>
+          <p>Community members, survey participants, collaboration partners, allies, elected officials, and leaders of health and well-being organizations across Greater Houston are all invited. Whether you took the survey, shared it with your networks, or are just learning about it now, there&rsquo;s a seat for you.</p>
         </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section class="section section--light">
+    <section class="section section--white">
       <div class="container">
         <h2 class="section-title">Common Questions</h2>
         <div class="faq-list">
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">Is my data safe? Can my responses be traced back to me?</div>
-            <div class="faq-a"><p>All responses are completely <strong>de-identified</strong> &mdash; your answers cannot be traced back to you. Data is stored on secure drives at Rice University, protected to the full extent of the law, and will never be sold. Responses are used exclusively for research purposes.</p></div>
+            <div class="faq-q" onclick="toggleFaq(this)">Who can attend?</div>
+            <div class="faq-a"><p>All are welcome. The release event is open to the public &mdash; community members, survey participants, partners, allies, and leaders alike.</p></div>
           </div>
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">Why do I need to provide my email or phone number?</div>
-            <div class="faq-a"><p>After the screener confirms eligibility, we need a way to send you the secure survey link. This also helps minimize bots and protect data quality. Your contact information is kept confidential and protected by Rice University.</p></div>
+            <div class="faq-q" onclick="toggleFaq(this)">Do I need to RSVP?</div>
+            <div class="faq-a"><p>Yes, please <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=eIwipPqW1UyeTU5rEsWXL_2AX7sar7dCo_p_54qcbJJUQVMxMDhES1ZUQUtKTlhHQUE3UDU0Tzc4OS4u" target="_blank">RSVP here</a> so we can plan accordingly. Questions about the event can be sent to <a href="mailto:media@montrosecenter.org">media@montrosecenter.org</a>.</p></div>
           </div>
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">Do I have to answer every question?</div>
-            <div class="faq-a"><p>No. The screener questions are required to confirm eligibility, but you can skip any question on the full survey that you&rsquo;re not comfortable answering.</p></div>
+            <div class="faq-q" onclick="toggleFaq(this)">Where and when is the event?</div>
+            <div class="faq-a"><p>Thursday, October 29, 2026, at the Montrose Center, 401 Branard St, 1st Floor, Houston, TX 77006. Doors open at 5:30 PM, the program begins at 6:00 PM, and the program ends at 7:00 PM.</p></div>
           </div>
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">How will the results be used?</div>
-            <div class="faq-a"><p>Results will uplift voices from across the LGBTQ+ community, connect findings to local leaders and organizations, and establish a repeatable baseline that can be tracked over time. All research is made freely available to the public.</p></div>
+            <div class="faq-q" onclick="toggleFaq(this)">Will the report be available to the public?</div>
+            <div class="faq-a"><p>Yes. All research is made freely available to the public.</p></div>
           </div>
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">Is the survey available in Spanish?</div>
-            <div class="faq-a"><p>Yes. The survey is available in both English and Spanish.</p></div>
+            <div class="faq-q" onclick="toggleFaq(this)">How was survey participants&rsquo; data protected?</div>
+            <div class="faq-a"><p>All responses are completely <strong>de-identified</strong> &mdash; answers cannot be traced back to any individual. Data is stored on secure drives at Rice University, protected to the full extent of the law, and will never be sold. Responses are used exclusively for research purposes.</p></div>
           </div>
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">How can my organization help?</div>
-            <div class="faq-a"><p>Share the screener link with your networks, post on social media, include it in newsletters, and encourage community members to participate. For partnership inquiries or co-branded materials, contact <a href="mailto:lgbtqsurvey@rice.edu">lgbtqsurvey@rice.edu</a>.</p></div>
+            <div class="faq-q" onclick="toggleFaq(this)">I&rsquo;m a member of the media. Who should I contact?</div>
+            <div class="faq-a"><p>Please contact <a href="mailto:media@montrosecenter.org">media@montrosecenter.org</a>. Questions about the survey research can be sent to <a href="mailto:lgbtqsurvey@rice.edu">lgbtqsurvey@rice.edu</a>.</p></div>
           </div>
         </div>
       </div>
@@ -530,12 +599,12 @@
     <!-- FINAL CTA -->
     <section class="section section--magenta">
       <div class="container" style="text-align: center;">
-        <h2 class="headline headline--white" style="margin-bottom: 12px;">Ready to Make Your Voice Count?</h2>
-        <p class="subheadline subheadline--white">Start with the 2-minute screener. If eligible, you&rsquo;ll receive a link to the full survey.</p>
+        <h2 class="headline headline--white" style="margin-bottom: 12px;">Be Part of This Historic Moment</h2>
+        <p class="subheadline subheadline--white">Join us Thursday, October 29 at the Montrose Center as the Houston Area L.O.V.E. Survey findings are shared publicly for the first time.</p>
         <div class="cta-wrap" style="margin-top: 24px;">
-          <a href="https://riceuniversity.co1.qualtrics.com/jfe/form/SV_57qDzxo7wiC6j3w" target="_blank" class="cta-btn cta-btn--outline">TAKE THE SCREENER &rarr;</a>
+          <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=eIwipPqW1UyeTU5rEsWXL_2AX7sar7dCo_p_54qcbJJUQVMxMDhES1ZUQUtKTlhHQUE3UDU0Tzc4OS4u" target="_blank" class="cta-btn cta-btn--outline">RSVP NOW &rarr;</a>
         </div>
-        <p class="cta-note cta-note--white">Data is stored securely at Rice University, will never be sold, and is used for research purposes only.</p>
+        <p class="cta-note cta-note--white">All are welcome &middot; Doors open at 5:30 PM &middot; Program begins at 6:00 PM</p>
       </div>
     </section>
 
@@ -586,20 +655,92 @@
   <!-- ============================================================ -->
   <div class="tab-content" id="content-es" role="tabpanel" aria-labelledby="tab-es">
 
-    <!-- INTRO -->
+    <!-- INVITATION -->
     <section class="section section--white">
       <div class="container">
-        <h1 class="headline">&iexcl;HAZ QUE TU VOZ SE ESCUCHE!</h1>
-        <p class="subheadline">&iquest;Qu&eacute; necesita realmente la comunidad LGBTQ+?</p>
-        <p>La <strong>Encuesta L.O.V.E. del &Aacute;rea de Houston</strong> &mdash; Opiniones, Voces y Experiencias LGBTQ+ &mdash; es la PRIMERA encuesta comunitaria sobre la vida LGBTQ+ en el &aacute;rea metropolitana de Houston. Cubre temas como acceso a la salud, salud mental, vivienda, cultura laboral, seguridad financiera, discriminaci&oacute;n y m&aacute;s.</p>
+        <p class="eyebrow">Presentaci&oacute;n P&uacute;blica del Informe</p>
+        <h1 class="headline">&iexcl;EST&Aacute;S INVITADO/A!</h1>
+        <p class="lede">Acomp&aacute;&ntilde;anos mientras compartimos lo que las personas LGBTQ+ de Houston nos contaron sobre sus vidas, sus necesidades y su bienestar, y lo que esto significa para nuestra regi&oacute;n. <strong>Todas las personas son bienvenidas.</strong></p>
 
-        <div class="cta-wrap">
-          <span class="cta-btn-wrap"><a href="https://riceuniversity.co1.qualtrics.com/jfe/form/SV_57qDzxo7wiC6j3w" target="_blank" class="cta-btn">&iexcl;TOMA LA ENCUESTA AHORA! &rarr;</a></span>
+        <div class="event-card">
+          <div class="rainbow-bar"></div>
+          <div class="event-rows">
+            <div class="event-row">
+              <div class="event-label">Cu&aacute;ndo</div>
+              <div class="event-value"><strong>Jueves, 29 de octubre de 2026</strong><br><span class="muted">5:30 PM apertura de puertas &middot; 6:00 PM programa &middot; 7:00 PM cierre del programa</span></div>
+            </div>
+            <div class="event-row">
+              <div class="event-label">D&oacute;nde</div>
+              <div class="event-value"><strong>The Montrose Center</strong><br><span class="muted">401 Branard St, primer piso, Houston, TX 77006</span><br><a class="map-link" href="https://maps.google.com/?q=401+Branard+St,+Houston,+TX+77006" target="_blank">C&oacute;mo llegar &rarr;</a></div>
+            </div>
+          </div>
         </div>
 
-        <h2 class="why-heading">Por Qu&eacute; Importa Esta Encuesta</h2>
-        <p class="why-intro">Actualmente no existe un conjunto de datos integral sobre lo que las personas LGBTQ+ del &aacute;rea metropolitana de Houston necesitan, viven o priorizan. Como resultado, las experiencias y voces de las personas LGBTQ+ de nuestra regi&oacute;n con demasiada frecuencia est&aacute;n ausentes de las decisiones que definen las pol&iacute;ticas, el financiamiento y los programas comunitarios.</p>
-        <p class="why-intro">La <strong>Encuesta L.O.V.E.</strong> busca cambiar esto escuchando a al menos 5,000 residentes LGBTQ+ de toda la regi&oacute;n. Los resultados se utilizar&aacute;n para:</p>
+        <div class="cta-wrap">
+          <span class="cta-btn-wrap"><a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=eIwipPqW1UyeTU5rEsWXL_2AX7sar7dCo_p_54qcbJJUQVMxMDhES1ZUQUtKTlhHQUE3UDU0Tzc4OS4u" target="_blank" class="cta-btn">CONFIRMA TU ASISTENCIA &rarr;</a></span>
+        </div>
+        <p class="cta-note">Abierto al p&uacute;blico. Por favor confirma tu asistencia para ayudarnos a planificar.</p>
+      </div>
+    </section>
+
+    <!-- SPEAKERS -->
+    <section class="section section--light">
+      <div class="container">
+        <h2 class="section-title">Oradores Destacados</h2>
+        <p class="speaker-intro">Escucha directamente a los l&iacute;deres e investigadores detr&aacute;s de la Encuesta L.O.V.E. del &Aacute;rea de Houston.</p>
+        <div class="speaker-list">
+          <div class="speaker">
+            <div class="speaker-photo"><img src="images/speakers/tammi-wallace.jpg" alt="Tammi Wallace" width="600" height="600"></div>
+            <div>
+              <div class="speaker-name">Tammi Wallace <span class="pronouns">(she/her)</span></div>
+              <div class="speaker-role">Cofundadora, Presidenta y Directora Ejecutiva</div>
+              <div class="speaker-org">Greater Houston LGBTQ+ Chamber of Commerce</div>
+              <p class="speaker-bio">Tammi lidera los esfuerzos para impulsar la inclusi&oacute;n econ&oacute;mica y las oportunidades para los negocios LGBTQ+ y la comunidad en general. Desde que cofund&oacute; la C&aacute;mara en 2016, ha ayudado a construir una red comunitaria que conecta a emprendedores, l&iacute;deres corporativos, organizaciones sin fines de lucro y funcionarios electos. Su experiencia incluye haber sido Directora de Crecimiento de KIPP Houston y Jefa de Gabinete de la Representante Estatal Ellen Cohen, y por m&aacute;s de dos d&eacute;cadas ha trabajado en favor de la comunidad LGBTQ+ para promover la igualdad.</p>
+            </div>
+          </div>
+          <div class="speaker">
+            <div class="speaker-photo"><img src="images/speakers/daniel-potter.jpg" alt="Daniel Potter" width="600" height="600"></div>
+            <div>
+              <div class="speaker-name">Daniel Potter <span class="pronouns">(he/him)</span></div>
+              <div class="speaker-role">Director</div>
+              <div class="speaker-org">Houston Population Research Center, Kinder Institute for Urban Research de Rice University</div>
+              <p class="speaker-bio">Daniel dirige el trabajo de encuestas del Houston Population Research Center, incluyendo el Greater Houston Community Panel, la Kinder Houston Area Survey, el Asian American Community Study y la Encuesta L.O.V.E. del &Aacute;rea de Houston. &Eacute;l y su equipo llevan cada encuesta de principio a fin para comprender mejor los valores, actitudes y experiencias de la vida en la regi&oacute;n de Houston.</p>
+            </div>
+          </div>
+          <div class="speaker">
+            <div class="speaker-photo"><img src="images/speakers/kishan-bhakta.jpg" alt="Kishan Bhakta" width="600" height="600"></div>
+            <div>
+              <div class="speaker-name">Kishan Bhakta <span class="pronouns">(he/him)</span></div>
+              <div class="speaker-role">Analista de Investigaci&oacute;n</div>
+              <div class="speaker-org">Houston Population Research Center, Kinder Institute for Urban Research de Rice University</div>
+              <p class="speaker-bio">El trabajo de Kishan se enfoca en la investigaci&oacute;n por encuestas, incluyendo el dise&ntilde;o y la programaci&oacute;n de encuestas, el an&aacute;lisis de datos y el uso de los hallazgos para comprender mejor las actitudes, experiencias y perspectivas de las personas en toda el &aacute;rea de Houston.</p>
+            </div>
+          </div>
+          <div class="speaker">
+            <div class="speaker-photo"><img src="images/speakers/avery-belyeu.jpg" alt="Avery Belyeu" width="600" height="600"></div>
+            <div>
+              <div class="speaker-name">Avery Belyeu <span class="pronouns">(she/her)</span></div>
+              <div class="speaker-role">Directora Ejecutiva</div>
+              <div class="speaker-org">The Montrose Center</div>
+              <p class="speaker-bio">Avery es una l&iacute;der con amplia experiencia en organizaciones sin fines de lucro, enfocada en la salud y el bienestar LGBTQ+. Su carrera abarca la prevenci&oacute;n del suicidio y la intervenci&oacute;n en crisis, la salud p&uacute;blica, los derechos civiles y la educaci&oacute;n superior. Ha ocupado puestos de liderazgo en Lambda Legal, el Suicide Prevention Resource Center y The Trevor Project, donde cre&oacute; el departamento de educaci&oacute;n de la organizaci&oacute;n. En 2024 fue incluida en la lista OUT100 de Out Magazine.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORIC -->
+    <section class="section section--white">
+      <div class="container">
+        <h2 class="section-title">Un Hecho Hist&oacute;rico para el &Aacute;rea de Houston</h2>
+        <p>La <strong>Encuesta L.O.V.E. del &Aacute;rea de Houston</strong> &mdash; Opiniones, Voces y Experiencias LGBTQ+ &mdash; es la PRIMERA encuesta comunitaria sobre la vida LGBTQ+ en el &aacute;rea metropolitana de Houston. Cubre temas como acceso a la salud, salud mental, vivienda, cultura laboral, seguridad financiera, discriminaci&oacute;n y m&aacute;s.</p>
+        <p class="why-intro">Hasta ahora, no exist&iacute;a un conjunto de datos integral sobre lo que las personas LGBTQ+ del &aacute;rea metropolitana de Houston necesitan, viven o priorizan. Como resultado, las experiencias y voces de las personas LGBTQ+ de nuestra regi&oacute;n con demasiada frecuencia han estado ausentes de las decisiones que definen las pol&iacute;ticas, el financiamiento y los programas comunitarios.</p>
+
+        <div class="partnership-callout">
+          <p>El informe se presenta durante el <strong>Mes de la Historia LGBTQ+</strong> &mdash; un momento ideal para dejar constancia de las voces de las personas LGBTQ+ de Houston y sumar un nuevo cap&iacute;tulo a la historia de nuestra comunidad.</p>
+        </div>
+
+        <h3 class="why-heading">Lo Que los Hallazgos Nos Ayudar&aacute;n a Lograr</h3>
         <ul class="why-list">
           <li>Amplificar las voces y perspectivas de toda la comunidad LGBTQ+ y del &aacute;rea metropolitana de Houston</li>
           <li>Conectar los hallazgos con l&iacute;deres locales, organizaciones comunitarias y miembros que puedan usar esta informaci&oacute;n para impulsar un cambio significativo</li>
@@ -607,87 +748,48 @@
           <li>Aprovechar otras investigaciones en curso del Kinder Institute para profundizar la comprensi&oacute;n de las diversas comunidades del &aacute;rea metropolitana de Houston</li>
         </ul>
 
-        <p><strong>Tus 15 minutos ayudan a influir en c&oacute;mo nuestra regi&oacute;n se presentar&aacute; para nosotros.</strong></p>
+        <p><strong>Gracias a cada persona LGBTQ+ de Houston que comparti&oacute; su voz. El 29 de octubre compartiremos lo que nos contaron.</strong></p>
       </div>
     </section>
 
-    <!-- HOW IT WORKS -->
+    <!-- ALL ARE WELCOME -->
     <section class="section section--light">
       <div class="container">
-        <h2 class="section-title">C&oacute;mo Funciona</h2>
-        <ol class="steps">
-          <li class="step">
-            <div class="step-number step-number--1">1</div>
-            <div>
-              <div class="step-title">Completa el Cuestionario de Elegibilidad</div>
-              <div class="step-desc">Un formulario r&aacute;pido de 2&ndash;3 minutos para confirmar que eres elegible (mayor de 18 a&ntilde;os, residente del &aacute;rea metropolitana de Houston, identificado/a como LGBTQ+).</div>
-            </div>
-          </li>
-          <li class="step">
-            <div class="step-number step-number--2">2</div>
-            <div>
-              <div class="step-title">Recibe Tu Enlace a la Encuesta</div>
-              <div class="step-desc">Si eres elegible, recibir&aacute;s un enlace seguro por correo electr&oacute;nico o mensaje de texto para completar la encuesta completa.</div>
-            </div>
-          </li>
-          <li class="step">
-            <div class="step-number step-number--3">3</div>
-            <div>
-              <div class="step-title">Comparte Tu Experiencia</div>
-              <div class="step-desc">Toma 15&ndash;20 minutos para responder preguntas sobre tu vida, necesidades y experiencias en el &aacute;rea metropolitana de Houston. Puedes omitir cualquier pregunta que prefieras no contestar.</div>
-            </div>
-          </li>
-        </ol>
-        <div class="cta-wrap">
-          <span class="cta-btn-wrap"><a href="https://riceuniversity.co1.qualtrics.com/jfe/form/SV_57qDzxo7wiC6j3w" target="_blank" class="cta-btn">&iexcl;COMIENZA EL CUESTIONARIO AHORA! &rarr;</a></span>
-        </div>
-        <p class="cta-note">Disponible en ingl&eacute;s y espa&ntilde;ol. Todas las respuestas son an&oacute;nimas y confidenciales.</p>
-      </div>
-    </section>
-
-    <!-- STAT + ELIGIBILITY -->
-    <section class="section section--white">
-      <div class="container">
-        <div class="stat-card">
-          <div class="stat-number">5,000+</div>
-          <div class="stat-label">Voces Necesarias del &Aacute;rea de Houston</div>
-          <p class="stat-desc">Los resultados se compartir&aacute;n con l&iacute;deres locales y organizaciones comunitarias para impulsar un cambio real. S&eacute; una de esas voces.</p>
-        </div>
         <div class="eligibility-box">
-          <h3>&iquest;Qui&eacute;n Puede Participar?</h3>
-          <p>Adultos (mayores de 18 a&ntilde;os) que vivan en el &aacute;rea metropolitana de Houston &mdash; incluyendo los condados de Harris, Fort Bend, Montgomery, Galveston, Brazoria, Chambers, Liberty y Waller &mdash; y que se identifiquen como miembro de la comunidad LGBTQ+.</p>
+          <h3>Todas las Personas Son Bienvenidas</h3>
+          <p>Invitamos a miembros de la comunidad, participantes de la encuesta, socios colaboradores, aliados, funcionarios electos y l&iacute;deres de organizaciones de salud y bienestar de toda el &aacute;rea de Houston. Ya sea que hayas tomado la encuesta, la hayas compartido con tus redes o reci&eacute;n la est&eacute;s conociendo, hay un lugar para ti.</p>
         </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section class="section section--light">
+    <section class="section section--white">
       <div class="container">
         <h2 class="section-title">Preguntas Frecuentes</h2>
         <div class="faq-list">
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">&iquest;Est&aacute;n seguros mis datos? &iquest;Se pueden rastrear mis respuestas?</div>
-            <div class="faq-a"><p>Todas las respuestas son completamente <strong>desidentificadas</strong> &mdash; tus respuestas no pueden rastrearse hasta ti. Los datos se almacenan en servidores seguros de Rice University, protegidos en toda la extensi&oacute;n de la ley, y nunca se vender&aacute;n. Las respuestas se utilizan exclusivamente con fines de investigaci&oacute;n.</p></div>
+            <div class="faq-q" onclick="toggleFaq(this)">&iquest;Qui&eacute;n puede asistir?</div>
+            <div class="faq-a"><p>Todas las personas son bienvenidas. El evento de presentaci&oacute;n est&aacute; abierto al p&uacute;blico &mdash; miembros de la comunidad, participantes de la encuesta, socios, aliados y l&iacute;deres por igual.</p></div>
           </div>
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">&iquest;Por qu&eacute; necesito proporcionar mi correo electr&oacute;nico o n&uacute;mero de tel&eacute;fono?</div>
-            <div class="faq-a"><p>Despu&eacute;s de que el cuestionario confirme tu elegibilidad, necesitamos una forma de enviarte el enlace seguro a la encuesta. Esto tambi&eacute;n ayuda a minimizar bots y proteger la calidad de los datos. Tu informaci&oacute;n de contacto se mantiene confidencial y est&aacute; protegida por Rice University.</p></div>
+            <div class="faq-q" onclick="toggleFaq(this)">&iquest;Necesito confirmar mi asistencia?</div>
+            <div class="faq-a"><p>S&iacute;, por favor <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=eIwipPqW1UyeTU5rEsWXL_2AX7sar7dCo_p_54qcbJJUQVMxMDhES1ZUQUtKTlhHQUE3UDU0Tzc4OS4u" target="_blank">confirma aqu&iacute;</a> para ayudarnos a planificar. Si tienes preguntas sobre el evento, escribe a <a href="mailto:media@montrosecenter.org">media@montrosecenter.org</a>.</p></div>
           </div>
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">&iquest;Tengo que responder todas las preguntas?</div>
-            <div class="faq-a"><p>No. Las preguntas del cuestionario de elegibilidad son obligatorias, pero puedes omitir cualquier pregunta de la encuesta completa que prefieras no contestar.</p></div>
+            <div class="faq-q" onclick="toggleFaq(this)">&iquest;D&oacute;nde y cu&aacute;ndo es el evento?</div>
+            <div class="faq-a"><p>El jueves 29 de octubre de 2026, en The Montrose Center, 401 Branard St, primer piso, Houston, TX 77006. Las puertas abren a las 5:30 PM, el programa comienza a las 6:00 PM y termina a las 7:00 PM.</p></div>
           </div>
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">&iquest;C&oacute;mo se utilizar&aacute;n los resultados?</div>
-            <div class="faq-a"><p>Los resultados amplificar&aacute;n las voces de toda la comunidad LGBTQ+, conectar&aacute;n los hallazgos con l&iacute;deres locales y organizaciones, y establecer&aacute;n una l&iacute;nea base que se podr&aacute; monitorear a lo largo del tiempo. Toda la investigaci&oacute;n se pone a disposici&oacute;n del p&uacute;blico de forma gratuita.</p></div>
+            <div class="faq-q" onclick="toggleFaq(this)">&iquest;El informe estar&aacute; disponible al p&uacute;blico?</div>
+            <div class="faq-a"><p>S&iacute;. Toda la investigaci&oacute;n se pone a disposici&oacute;n del p&uacute;blico de forma gratuita.</p></div>
           </div>
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">&iquest;La encuesta est&aacute; disponible en ingl&eacute;s?</div>
-            <div class="faq-a"><p>S&iacute;. La encuesta est&aacute; disponible en ingl&eacute;s y espa&ntilde;ol.</p></div>
+            <div class="faq-q" onclick="toggleFaq(this)">&iquest;C&oacute;mo se protegieron los datos de los participantes?</div>
+            <div class="faq-a"><p>Todas las respuestas son completamente <strong>desidentificadas</strong> &mdash; no pueden rastrearse hasta ninguna persona. Los datos se almacenan en servidores seguros de Rice University, protegidos en toda la extensi&oacute;n de la ley, y nunca se vender&aacute;n. Las respuestas se utilizan exclusivamente con fines de investigaci&oacute;n.</p></div>
           </div>
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">&iquest;C&oacute;mo puede ayudar mi organizaci&oacute;n?</div>
-            <div class="faq-a"><p>Comparte el enlace del cuestionario con tus redes, publica en redes sociales, incl&uacute;yelo en boletines informativos y anima a los miembros de la comunidad a participar. Para consultas sobre colaboraci&oacute;n o materiales, contacta a <a href="mailto:lgbtqsurvey@rice.edu">lgbtqsurvey@rice.edu</a>.</p></div>
+            <div class="faq-q" onclick="toggleFaq(this)">Soy periodista. &iquest;A qui&eacute;n debo contactar?</div>
+            <div class="faq-a"><p>Por favor escribe a <a href="mailto:media@montrosecenter.org">media@montrosecenter.org</a>. Las preguntas sobre la investigaci&oacute;n pueden enviarse a <a href="mailto:lgbtqsurvey@rice.edu">lgbtqsurvey@rice.edu</a>.</p></div>
           </div>
         </div>
       </div>
@@ -696,12 +798,12 @@
     <!-- FINAL CTA -->
     <section class="section section--magenta">
       <div class="container" style="text-align: center;">
-        <h2 class="headline headline--white" style="margin-bottom: 12px;">&iquest;Listo/a para Hacer que Tu Voz Cuente?</h2>
-        <p class="subheadline subheadline--white">Comienza con el cuestionario de 2 minutos. Si eres elegible, recibir&aacute;s un enlace a la encuesta completa.</p>
+        <h2 class="headline headline--white" style="margin-bottom: 12px;">S&eacute; Parte de Este Momento Hist&oacute;rico</h2>
+        <p class="subheadline subheadline--white">Acomp&aacute;&ntilde;anos el jueves 29 de octubre en The Montrose Center, cuando los hallazgos de la Encuesta L.O.V.E. del &Aacute;rea de Houston se compartan p&uacute;blicamente por primera vez.</p>
         <div class="cta-wrap" style="margin-top: 24px;">
-          <a href="https://riceuniversity.co1.qualtrics.com/jfe/form/SV_57qDzxo7wiC6j3w" target="_blank" class="cta-btn cta-btn--outline">&iexcl;TOMA EL CUESTIONARIO! &rarr;</a>
+          <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=eIwipPqW1UyeTU5rEsWXL_2AX7sar7dCo_p_54qcbJJUQVMxMDhES1ZUQUtKTlhHQUE3UDU0Tzc4OS4u" target="_blank" class="cta-btn cta-btn--outline">CONFIRMA TU ASISTENCIA &rarr;</a>
         </div>
-        <p class="cta-note cta-note--white">Los datos se almacenan de forma segura en Rice University, nunca se vender&aacute;n y se utilizan exclusivamente con fines de investigaci&oacute;n.</p>
+        <p class="cta-note cta-note--white">Todas las personas son bienvenidas &middot; Puertas abren a las 5:30 PM &middot; Programa a las 6:00 PM</p>
       </div>
     </section>
 
@@ -750,7 +852,8 @@
   <!-- ===== FOOTER ===== -->
   <div class="rainbow-bar"></div>
   <footer class="footer">
-    <p>Questions about the survey? Contact <a href="mailto:lgbtqsurvey@rice.edu">lgbtqsurvey@rice.edu</a></p>
+    <p>Questions about the event? Contact <a href="mailto:media@montrosecenter.org">media@montrosecenter.org</a></p>
+    <p>Questions about the survey research? Contact <a href="mailto:lgbtqsurvey@rice.edu">lgbtqsurvey@rice.edu</a></p>
     <p>&copy; 2026 Houston Area L.O.V.E. Survey</p>
   </footer>
 
@@ -780,12 +883,12 @@
 
     // ===== GA4 EVENT TRACKING =====
 
-    // Track CTA clicks to the screener
-    document.querySelectorAll('a.cta-btn').forEach(function(btn) {
+    // Track RSVP clicks (buttons + FAQ link)
+    document.querySelectorAll('a[href*="forms.cloud.microsoft"]').forEach(function(btn) {
       btn.addEventListener('click', function() {
         var lang = document.getElementById('content-en').classList.contains('active') ? 'english' : 'spanish';
-        var section = btn.closest('.section--magenta') ? 'bottom_cta' : 'main_cta';
-        gtag('event', 'screener_click', {
+        var section = btn.closest('.section--magenta') ? 'bottom_cta' : (btn.closest('.faq-a') ? 'faq_link' : 'main_cta');
+        gtag('event', 'rsvp_click', {
           event_category: 'conversion',
           event_label: section + '_' + lang,
           language: lang,
