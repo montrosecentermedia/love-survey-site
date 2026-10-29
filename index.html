@@ -408,6 +408,74 @@
     .footer a { color: rgba(255,255,255,0.7); text-decoration: underline; }
     .footer a:hover { color: #fff; }
 
+    /* ===== REPORT DOWNLOAD BANNER ===== */
+    .report-banner {
+      background: linear-gradient(135deg, #CA0D9C 0%, #AC068D 55%, #8F007E 100%);
+      color: #fff;
+    }
+    .report-banner__inner {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .report-banner__eyebrow {
+      display: block;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 2px;
+    }
+    .report-banner__title {
+      display: block;
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+    .report-banner__sub {
+      display: block;
+      font-size: 14px;
+      color: rgba(255,255,255,0.9);
+      line-height: 1.4;
+      margin-top: 2px;
+    }
+    .report-banner__btn {
+      flex-shrink: 0;
+      display: inline-block;
+      padding: 14px 30px;
+      border-radius: 50px;
+      background: #fff;
+      color: #8F007E;
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+      text-decoration: none;
+      white-space: nowrap;
+      box-shadow: 0 4px 14px rgba(61,0,54,0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .report-banner__btn:hover,
+    .report-banner__btn:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(61,0,54,0.35);
+    }
+    .report-banner__btn:focus-visible { outline: 3px solid #FFED00; outline-offset: 3px; }
+    /* Banner language follows the English/Espanol tabs */
+    .rb-es { display: none !important; }
+    html[data-lang="es"] .rb-es { display: block !important; }
+    html[data-lang="es"] .report-banner__btn .rb-es { display: inline !important; }
+    html[data-lang="es"] .rb-en { display: none !important; }
+    @media (max-width: 680px) {
+      .report-banner__inner { flex-direction: column; text-align: center; gap: 14px; padding: 18px 20px 20px; }
+      .report-banner__title { font-size: 18px; }
+      .report-banner__btn { width: 100%; max-width: 360px; white-space: normal; }
+    }
+
     /* ===== MOBILE ===== */
     @media (max-width: 600px) {
       .headline { font-size: 28px; }
@@ -434,6 +502,22 @@
   </style>
 </head>
 <body>
+
+  <!-- ===== REPORT DOWNLOAD BANNER ===== -->
+  <div class="report-banner" role="region" aria-label="Download the Houston Area L.O.V.E. Survey report">
+    <div class="report-banner__inner">
+      <div class="report-banner__text">
+        <span class="report-banner__eyebrow rb-en">Now Available</span>
+        <span class="report-banner__eyebrow rb-es" lang="es">Ya disponible</span>
+        <span class="report-banner__title rb-en">Read the Full Houston Area L.O.V.E. Survey Report</span>
+        <span class="report-banner__title rb-es" lang="es">Lea el informe completo de la Encuesta L.O.V.E. del &Aacute;rea de Houston</span>
+        <span class="report-banner__sub rb-en">Results From a Pilot Study of Houston&rsquo;s LGBTQ+ Communities &middot; Kinder Institute for Urban Research at Rice University</span>
+        <span class="report-banner__sub rb-es" lang="es">Resultados de un estudio piloto de las comunidades LGBTQ+ de Houston &middot; Kinder Institute for Urban Research at Rice University</span>
+      </div>
+      <a class="report-banner__btn" href="https://rice.app.box.com/s/u1wg7n8zk62tw153btj9hqvvuj6ra46t" target="_blank" rel="noopener" aria-label="Download the full report (PDF, opens in a new window)"><span class="rb-en">Download the Report (PDF) &#8599;</span><span class="rb-es" lang="es">Descargar el informe (PDF) &#8599;</span></a>
+    </div>
+  </div>
+  <div class="rainbow-bar"></div>
 
   <!-- ===== HERO BANNER ===== -->
   <div class="hero">
@@ -877,6 +961,7 @@
       document.getElementById('tab-' + lang).classList.add('active');
       document.getElementById('tab-' + lang).setAttribute('aria-selected', 'true');
       document.getElementById('content-' + lang).classList.add('active');
+      document.documentElement.setAttribute('data-lang', lang);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
@@ -900,6 +985,19 @@
           event_label: section + '_' + lang,
           language: lang,
           button_location: section
+        });
+      });
+    });
+
+    // Track report downloads (top banner)
+    document.querySelectorAll('.report-banner__btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var lang = document.getElementById('content-en').classList.contains('active') ? 'english' : 'spanish';
+        gtag('event', 'report_download', {
+          event_category: 'conversion',
+          event_label: 'top_banner_' + lang,
+          language: lang,
+          button_location: 'top_banner'
         });
       });
     });
